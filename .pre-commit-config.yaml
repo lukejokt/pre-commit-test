@@ -2,6 +2,11 @@ default_language_version:
   node: 18.15.0
 
 repos:
+    # python code formatting
+  - repo: https://github.com/lukjok/test
+    rev: main
+    hooks:
+      - id: black
   # EOF and whitespace checker
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
